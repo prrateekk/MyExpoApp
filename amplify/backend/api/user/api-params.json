@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/user",
+            "lambdaFunction": "GetUser",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/user"
+        }
+    ],
+    "resourceName": "user",
+    "apiName": "user",
+    "functionArns": [
+        {
+            "lambdaFunction": "GetUser"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-myexpoapp-dev-190904-authRole",
+        "unAuthRoleName": "amplify-myexpoapp-dev-190904-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "GetUser",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
