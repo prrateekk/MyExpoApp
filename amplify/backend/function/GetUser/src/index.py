@@ -3,7 +3,7 @@ import json
 def handler(event, context):
   print('received event:')
   print(event)
-  message = "Hello from the other side :)"
+  message = "Dummy Message"
   return {
     'statusCode': 200,
     'headers': {
